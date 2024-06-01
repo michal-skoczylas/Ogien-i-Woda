@@ -1,13 +1,19 @@
 #include "GraphicalObject.h"
-
-GraphicalObject::GraphicalObject(std::string texturePath)
-{
-    m_texture.loadFromFile(texturePath);
+#include <iostream>
+GraphicalObject::GraphicalObject(std::string texturePath, sf::Vector2f position, bool is_repeat=false){
+    m_texture.setRepeated(is_repeat);
+    if(!m_texture.loadFromFile(texturePath)){
+        std::cout << "Error loading texture" << std::endl;
+    }
     m_sprite.setTexture(m_texture);
+    this->setPosition(position);
 }
 void GraphicalObject::setTexture(std::string texturePath)
 {
-    m_texture.loadFromFile(texturePath);
+    if(!m_texture.loadFromFile(texturePath)){
+        std::cout << "Error loading texture" << std::endl;
+    
+    }
 }
 void GraphicalObject::setSprite()
 {
