@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/michal/Desktop/ogieniwoda/build",
+  "command": "/usr/bin/c++ -g -std=gnu++14 -o CMakeFiles/MySFMLProject.dir/main.cpp.o -c /home/michal/Desktop/ogieniwoda/main.cpp",
+  "file": "/home/michal/Desktop/ogieniwoda/main.cpp",
+  "output": "CMakeFiles/MySFMLProject.dir/main.cpp.o"
+}
+]
